@@ -33,8 +33,8 @@ const app = express()
 //         }
 //     }
 // }
-
 // app.use(cors(corsOptions))
+
 app.use(bodyParser.json({
     type: '*/*'
 }))
@@ -49,7 +49,6 @@ app.use(passport.session())
 
 require('./routes/authRoutes')(app)
 require('./routes/userRoutes')(app)
-
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))
