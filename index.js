@@ -13,11 +13,11 @@ require('./services/passport')
 // ------------------------------------------------------
 
 mongoose.connect(
-    'mongodb://localhost/chizabarber',                  // Done: set up local MongoDB database
+    keys.mongoURI,
     {
         useNewUrlParser: true,
         useCreateIndex: true,
-    },
+    }
 )
 mongoose.Promise = global.Promise
 
