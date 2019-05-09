@@ -50,35 +50,19 @@ app.use(passport.session())
 require('./routes/authRoutes')(app)
 require('./routes/userRoutes')(app)
 
-// app.get('/', (req, res) => {
-//     let adminContent = `
-//         <div>
-//             You don't appear to be logged in.  
-//             You can log in by visiting
-//             <a href="/auth/google">the Authentication Route</a>. 
-//             You could also look at details about yourself at 
-//             <a href="/current_user">the Current User route</a>
-//         </div>
-//     `
-//     if (req.user) {
-//         adminContent = `
-//             <div>
-//                 You appear to be logged in, so you can visit 
-//                 <a href="/admins">the Admins route</a>
-//                 or you can <a href="/logout">Logout</a>.
-//             </div>
-//         `
-//     }
-//     res.send(`
-//         <div>
-//             <h4>Welcome to the SolipSystem API!</h4>
-//             <div>
-//                 You can see <a href="/users">the Users route</a>.
-//             </div>
-//             ${adminContent}
-//         </div>
-//     `)
-// })
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'))                 // Note: Express will serve up production assets from client/build
+    const path = require('path')                            // Note: Express will serve up index.html for unrecognized routes
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(
+            __dirname, 
+            'client', 
+            'build', 
+            'index.html'
+        ))
+    })
+}
 
 const port = process.env.PORT || 5000
 const server = http.createServer(app)
