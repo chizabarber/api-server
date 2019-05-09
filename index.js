@@ -52,8 +52,8 @@ require('./routes/userRoutes')(app)
 
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'))                 // Note: Express will serve up production assets from client/build
-    const path = require('path')                            // Note: Express will serve up index.html for unrecognized routes
+    app.use(express.static('client/build'))
+    const path = require('path')
     app.get('*', (req, res) => {
         res.sendFile(path.resolve(
             __dirname, 
