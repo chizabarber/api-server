@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const cookieSession = require('cookie-session')
 const passport = require('passport')
 const bodyParser = require('body-parser')
-// const cors = require('cors')
+const cors = require('cors')
 const http = require('http')
 // ------------------------------------------------------
 const keys = require('./config/keys')
@@ -33,7 +33,7 @@ const app = express()
 //         }
 //     }
 // }
-// app.use(cors(corsOptions))
+app.use(cors())
 
 app.use(bodyParser.json({
     type: '*/*'
