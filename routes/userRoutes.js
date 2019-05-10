@@ -8,7 +8,13 @@ module.exports = (app) => {
     app.get('/users', (req, res) => {
         res.send(users)
     })
+    app.get('/api/users', (req, res) => {
+        res.send(users)
+    })
     app.get('/admins', requireLogin, (req, res) => {
+        res.send(admins)
+    })
+    app.get('/api/admins', requireLogin, (req, res) => {
         res.send(admins)
     })
 }
