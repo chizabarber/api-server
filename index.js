@@ -23,18 +23,7 @@ mongoose.Promise = global.Promise
 
 const app = express()
 
-// const whitelist = ['http://localhost:3000']                 // Todo: implement CORS config when in production mode
-// const corsOptions = {
-//     origin: (origin, callback) => {
-//         if (whitelist.indexOf(origin) !== -1) {
-//             callback(null, true)
-//         } else {
-//             callback(new Error('Not allowed by CORS'))
-//         }
-//     }
-// }
 app.use(cors())
-
 app.use(bodyParser.json({
     type: '*/*'
 }))

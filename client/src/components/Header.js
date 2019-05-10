@@ -1,6 +1,7 @@
 // ------------------------------------------------------
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 // ------------------------------------------------------
 
 const Header = ({ auth }) => {
@@ -18,20 +19,21 @@ const Header = ({ auth }) => {
         <nav
             style={{
                 backgroundColor: '#fff',
-                borderTop: '3px solid #367da2'
+                borderTop: '10px solid #367da2',
+                paddingBottom: '60px'
             }}
         >
             <div className='nav-wrapper'>
-                <a 
-                    href='http://localhost:3000/'
+                <Link 
+                    to='/'
                     className='brand-logo'
                     style={{
                         color: '#367da2',
                         marginLeft: '1%'
                     }}
                 >
-                    Chiza Barber | dev
-                </a>
+                    CHIZA BARBER | dev
+                </Link>
                 <ul className='right'>
                     <li>
                         <a href='/users' className='black-text'>
