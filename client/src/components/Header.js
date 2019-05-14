@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom'
 const Header = ({ auth }) => {
     console.log('My auth status is', auth)
     const authButton = auth ? (
-        <a href='/api/logout' className='black-text'
-            >Log Out
+        <a href='/api/logout' className='white-text'>
+            Log Out
         </a>
     ) : (
-        <a href='/api/auth/google' className='black-text'>
+        <a href='/api/auth/google' className='white-text'>
             Log In
         </a>
     )
@@ -29,23 +29,35 @@ const Header = ({ auth }) => {
                     className='brand-logo'
                     style={{
                         color: '#367da2',
-                        marginLeft: '1%'
+                        marginLeft: '1%',
+                        fontSize: '1.75rem'
                     }}
                 >
-                    CHIZA BARBER | dev
+                    C B | dev
                 </Link>
                 <ul className='right'>
+                    <li>{authButton}</li>
                     <li>
                         <a href='/users' className='black-text'>
-                            Users
+                            Tech
                         </a>
                     </li>
                     <li>
                         <a href='/admins' className='black-text'>
-                            Admins
+                            Projects
                         </a>
                     </li>
-                    <li>{authButton}</li>
+                    <li>
+                        <a 
+                            href='http://www.chizabarber.com' 
+                            style={{
+                                color: '#367da2',
+                                fontSize: '1.5rem'
+                            }}
+                        >
+                            | com
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
