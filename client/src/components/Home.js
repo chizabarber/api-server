@@ -17,7 +17,6 @@ const HomePage = () => {
             </h3>
             <p>This page is a work in progress...</p>
         </div>
-        
     )
 }
 

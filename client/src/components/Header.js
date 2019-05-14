@@ -1,11 +1,16 @@
 // ------------------------------------------------------
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import M from 'materialize-css'
 // ------------------------------------------------------
 
 const Header = ({ auth }) => {
     console.log('My auth status is', auth)
+    useEffect(() => {
+        const sidenav = document.querySelector('.sidenav')
+        M.Sidenav.init(sidenav, {})
+    })
     const authButton = auth ? (
         <a href='/api/logout' className='white-text'>
             Log Out
@@ -35,11 +40,45 @@ const Header = ({ auth }) => {
                 >
                     C B | dev
                 </Link>
-                <ul className='right'>
+                {/* eslint-disable-next-line */}
+                <a 
+                    href='#' 
+                    data-target='mobile' 
+                    className='sidenav-trigger'
+                >
+                    <i className='material-icons black-text'>
+                        menu
+                    </i>
+                </a>
+                <ul className='right hide-on-med-and-down'>
                     <li>{authButton}</li>
                     <li>
                         <a href='/users' className='black-text'>
-                            Tech
+                            Code
+                        </a>
+                    </li>
+                    <li>
+                        <a href='/admins' className='black-text'>
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href='http://www.chizabarber.com' 
+                            style={{
+                                color: '#367da2',
+                                fontSize: '1.5rem'
+                            }}
+                        >
+                            | com
+                        </a>
+                    </li>
+                </ul>
+                <ul className='sidenav' id='mobile'>
+                    <li>{authButton}</li>
+                    <li>
+                        <a href='/users' className='black-text'>
+                            Code
                         </a>
                     </li>
                     <li>
