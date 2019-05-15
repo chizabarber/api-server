@@ -7,6 +7,7 @@ import '../styles/App.css'
 import { fetchUser } from '../actions'
 import Header from './Header'
 import Home from './Home'
+import Projects from './Projects'
 // ------------------------------------------------------
 
 class App extends Component {
@@ -18,8 +19,8 @@ class App extends Component {
             <BrowserRouter>
                 <div>
                     <Header />
-                    <Route exact path='/' component={Home} 
-                    />
+                    <Route exact path='/' component={Home} />
+                    <Route path='/projects' component={Projects} />
                 </div>
             </BrowserRouter>
         )
