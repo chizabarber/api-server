@@ -1,14 +1,42 @@
 // ------------------------------------------------------
 import React from 'react'
 // ------------------------------------------------------
+import architecture from '../images/architecture.png'
 
 const Home = () => {
+    const renderLinks = () => {
+        return (
+            <div>
+                <a 
+                    href='https://github.com/chizabarber/ssr-server'
+                    className='btn-flat'
+                    style={{
+                        color: '#367da2'
+                    }}
+                >
+                    ssr-server
+                </a>
+                <a 
+                    href='https://github.com/chizabarber/api-server'
+                    className='btn-flat'
+                    style={{
+                        color: '#367da2'
+                    }}
+                >
+                    api-server
+                </a>
+            </div>
+        )
+    }
     return (
         <div
             className='center-align'
-            style={{ marginTop: '200px' }}
+            style={{ marginTop: '5%' }}
         >
-            <div style={{ height: '62vh' }}>
+            <div 
+                style={{ height: '74vh' }}
+                className='container'
+            >
                 <h3
                     style={{
                         color: '#367da2'
@@ -32,6 +60,23 @@ const Home = () => {
                     will serve as a space for my projects and
                     experiments as I continue on my coding journey.
                 </p>
+                <p>
+                    The first of these projects are the Chiza Barber 
+                    sites themselves. Below is a diagram of the
+                    sites' architecture and how they interact. 
+                    They are a work in progress, each with its own 
+                    set of challenges despite their simplicity.
+                </p>
+                {renderLinks()}
+                <img 
+                    src={architecture} 
+                    alt='architecture'
+                    style={{
+                        width: '115%',
+                        marginBottom: '3%',
+                        paddingRight: '15%'
+                    }}
+                />
             </div>
             <div
                 style={{
