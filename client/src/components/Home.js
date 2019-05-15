@@ -23,8 +23,8 @@ const Home = () => {
             <p>
                 This sister site to 
                 <a 
-                    href='www.chizabarber.com'
-                    style={{ padding: '5px' }}
+                    href='http://www.chizabarber.com'
+                    style={{ padding: '5px', color: '#367da2' }}
                 >
                     ChizaBarber.com
                 </a>
