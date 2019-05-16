@@ -86,11 +86,11 @@ const Home = () => {
                     Getting a grasp of server-side rendering took
                     some time, as it's a considerable departure
                     from the architecture of traditional React apps
-                    (which I'm also still learning!). It's for this
-                    reason that I designed the two sites to work in
-                    tandem, one rendered server-side, and the other 
-                    rendered on the client-side... forcing myself to
-                    work with both models on this project!
+                    (which I'm also still learning!). I designed the 
+                    two sites to work in tandem, one rendered 
+                    server-side, and the other rendered client-side; 
+                    that way, I'm forced to work with both rendering 
+                    models on this project! Only way to learn. :)
                 </p>
             </div>
             <Footer />
