@@ -23,4 +23,10 @@ body {
     overflow: hidden;
 }
 
-/* Footer styles -------------------------------- */
+/* Navbar styles -------------------------------- */
+
+.navbar-fixed {
+    z-index: 999; 
+}
+
+/* Navbar styles -------------------------------- */

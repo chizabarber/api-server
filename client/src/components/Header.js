@@ -78,12 +78,12 @@ const Header = ({ auth }) => {
                     <ul className='sidenav' id='mobile'>
                         <li>{authButton}</li>
                         <li>
-                            <a href='/users' className='black-text'>
+                            <a href='https://github.com/chizabarber' className='black-text'>
                                 Code
                             </a>
                         </li>
                         <li>
-                            <a href='/admins' className='black-text'>
+                            <a href='/projects' className='black-text'>
                                 Projects
                             </a>
                         </li>
