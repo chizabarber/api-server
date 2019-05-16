@@ -2,6 +2,8 @@
 import React from 'react'
 // ------------------------------------------------------
 import architecture from '../images/architecture.png'
+import Footer from './Footer'
+// ------------------------------------------------------
 
 const Home = () => {
     const renderLinks = () => {
@@ -34,7 +36,7 @@ const Home = () => {
             style={{ marginTop: '5%' }}
         >
             <div 
-                style={{ height: '74vh' }}
+                style={{ marginBottom: '6%' }}
                 className='container'
             >
                 <h3
@@ -73,27 +75,25 @@ const Home = () => {
                     alt='architecture'
                     style={{
                         width: '115%',
-                        marginBottom: '3%',
                         paddingRight: '15%'
                     }}
                 />
-            </div>
-            <div
-                style={{
-                    backgroundColor: '#367da2',
-                    height: '50px',
-                    marginTop: '3%',
-                    color: 'white'
-                }}
-            >
-                <p style={{
-                    position: 'relative',
-                    top: '50%',
-                    transform: 'translateY(-50%)'
-                }}>
-                    Copyright 2019 © Chiza Barber
+                <p>
+                    ChizaBarber.com is the <b>ssr-server</b> above,
+                    and ChizaBarber.dev is the <b>api-server</b>. 
+                </p>
+                <p>
+                    Getting a grasp of server-side rendering took
+                    some time, as it's a considerable departure
+                    from the architecture of traditional React apps
+                    (which I'm also still learning!). It's for this
+                    reason that I designed the two sites to work in
+                    tandem, one rendered server-side, and the other 
+                    rendered on the client-side... forcing myself to
+                    work with both models on this project!
                 </p>
             </div>
+            <Footer />
         </div>
     )
 }
