@@ -65,7 +65,7 @@ const Header = ({ auth }) => {
                         </li>
                         <li>
                             <a 
-                                href='http://www.chizabarber.com' 
+                                href='https://www.chizabarber.com' 
                                 style={{
                                     color: '#367da2',
                                     fontSize: '1.5rem'
@@ -89,7 +89,7 @@ const Header = ({ auth }) => {
                         </li>
                         <li>
                             <a 
-                                href='http://www.chizabarber.com' 
+                                href='https://www.chizabarber.com' 
                                 style={{
                                     color: '#367da2',
                                     fontSize: '1.5rem'
