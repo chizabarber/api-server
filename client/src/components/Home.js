@@ -2,6 +2,7 @@
 import React from 'react'
 // ------------------------------------------------------
 import architecture from '../images/architecture.png'
+import Button from './Button'
 import Footer from './Footer'
 // ------------------------------------------------------
 
@@ -9,24 +10,16 @@ const Home = () => {
     const renderLinks = () => {
         return (
             <div>
-                <a 
-                    href='https://github.com/chizabarber/ssr-server'
-                    className='btn-flat'
-                    style={{
-                        color: '#367da2'
-                    }}
-                >
-                    ssr-server
-                </a>
-                <a 
-                    href='https://github.com/chizabarber/api-server'
-                    className='btn-flat'
-                    style={{
-                        color: '#367da2'
-                    }}
-                >
-                    api-server
-                </a>
+                <Button
+                    url='https://github.com/chizabarber/ssr-server'
+                    text='ssr-server'
+                    className='left-button btn-flat'
+                />
+                <Button
+                    url='https://github.com/chizabarber/api-server'
+                    text='api-server'
+                    className='right-button btn-flat'
+                />
             </div>
         )
     }
