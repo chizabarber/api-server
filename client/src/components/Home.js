@@ -39,11 +39,7 @@ const Home = () => {
                 >
                     A Home for Code
                 </h3>
-                <hr style={{
-                        width: '25%',
-                        marginTop: '30px',
-                        marginBottom: '30px'
-                    }} />
+                <hr className='h-rule' />
                 <p>
                     This sister site to 
                     <a 

@@ -48,4 +48,12 @@ body {
     color: #367da2
 }
 
-/* Button styles -------------------------------- */
+/* H. Rule styles -------------------------------- */
+
+.h-rule {
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+/* H. Rule styles -------------------------------- */
