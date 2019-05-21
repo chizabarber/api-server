@@ -4,11 +4,16 @@ html {
     position: relative;
     min-height: 100%;
 }
-
 body {
     margin: 0 0 50px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: .10em;
+}
+a {
+    color: #367da2
+}
+blockquote {
+    border-left: 5px solid #367da2
 }
 
 /* Footer styles -------------------------------- */
