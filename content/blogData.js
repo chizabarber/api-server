@@ -15,10 +15,10 @@ const blog = {
                 <p><i>&quot;Is she a developer or an administrator or what?&quot;</i></p>
             </blockquote>
             <p>
-                Point taken. For the purpose of quick employment, it would probably be in my best interest to buckle down on one or the other. There aren't (m)any developer jobs on the market needing people with admin experience, or vice versa.
+                Point taken. For the sake of quick employment, it would probably be in my best interest to buckle down on one or the other. There aren't (m)any developer jobs on the market needing people with admin experience, or vice versa.
             </p>
             <p>
-                However, it feels disingenuous to leave out aspects of my skillset simply to send a more targeted message. As my sites evolve, it's my hope that I'll find my target audience in those employers who are not confused by, or dismissive of, my mishmash of skills. Mainly because my mishmash is exactly what they need.
+                However, it feels disingenuous to leave out aspects of my skillset simply to send a more targeted message. As my sites evolve, it's my hope that I'll find my target audience in those employers who are not confused by, or dismissive of, my mishmash of skills. Ideally because my mishmash is exactly what they need.
             </p>
             <h5 class="blog-subtitle center-align">
                 All The Hats
@@ -45,10 +45,10 @@ const blog = {
                 A Custom Solution
             </h5>
             <p>
-                In the end, that's what I love to do. I believe that most problems can be solved by imparting clarity to an issue; the challenge is in communicating effectively enough so that clarity actually emerges from the chaos. While nothing can replace personal communication with clients and customers or between team members, there is something equally irreplaceable about communication via the digital medium.
+                In the end, that's what I love to do. Most problems can be solved by imparting clarity to an issue; the challenge, I believe, is in communicating effectively enough so that clarity actually emerges from the chaos. While nothing can replace personal communication with clients and customers or between team members, there is something equally irreplaceable about communication via the digital medium.
             </p>
             <p>
-                Everything from Trello scrum boards, to data-vis dashboards, to LinkedIn infographics, to Facebook ad campaigns are essentially about the same thing. It's a message that <em>stays</em>. It's information that can be acted upon.
+                Everything from Trello scrum boards, to data-vis dashboards, to LinkedIn infographics, to Facebook ad campaigns are essentially doing the same thing. It's a message that <em>stays</em>. It's information that can be acted upon.
             </p>
             <p>
                 I realize that most companies employ teams to handle the various aspects of digital communication — both internally and externally. Time is of the essence, after all. But my experience has taught me that every company's needs are different. Your company might be in need of someone to fill a hybrid role. Or maybe you need an admin who can competently speak to teams of disparate disciplines.
