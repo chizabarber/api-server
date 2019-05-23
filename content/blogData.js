@@ -4,10 +4,10 @@ const blog = {
     posts: [
         {
             id: 1,
-            img: 'https://avatars1.githubusercontent.com/u/50642363?s=460&v=4',
+            img: 'https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png',
             title: 'An Introduction',
-            snippet: 'To get something out of the way, yes — I am aware that between ChizaBarber.com and ChizaBarber.dev, visitors to my site(s) may be confused...',
-            text: `<img src="https://avatars1.githubusercontent.com/u/50642363?s=460&v=4" alt="img" class="test-image">
+            snippet: 'To get something out of the way, yes — I am aware that between...',
+            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png" alt="img" class="test-image">
             <p>
                 To get something out of the way, yes — I am aware that between <a href="https://www.chizabarber.com">ChizaBarber.com</a> and <a href="https://www.chizabarber.dev">ChizaBarber.dev</a>, visitors to my site(s) may be confused about what it is that I actually <em>do</em>, and what kind of position I'm trying to get into. 
             </p>
@@ -59,10 +59,10 @@ const blog = {
         },
         {
             id: 2,
-            img: 'https://avatars1.githubusercontent.com/u/50642363?s=460&v=4',
+            img: 'https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png',
             title: 'Pardon My Mess...',
-            snippet: '... As I test my blog. This will be the future home of my blog, which is being rendered isometrically on the server and the browser.',
-            text: `<img src="https://avatars1.githubusercontent.com/u/50642363?s=460&v=4" alt="img" class="test-image">
+            snippet: '... As I test my blog. This will be the future home of my blog, which is...',
+            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png" alt="img" class="test-image">
             <p>
                 This will be the future home of my blog, which is being rendered isometrically on the server and the browser. The content will render whether Javascript is turned on or off, and will remain SEO-accessible.
             </p>
