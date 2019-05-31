@@ -59,31 +59,66 @@ const blog = {
         },
         {
             id: 2,
-            img: 'https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png',
-            title: 'Pardon My Mess...',
-            snippet: '... As I test my blog. This will be the future home of my blog, which is...',
-            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png" alt="img" class="test-image">
+            img: 'https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon2.png',
+            title: 'The Whys of this Site',
+            snippet: 'I\'m past due to re-enter the workforce. As much as I\'ve enjoyed this...',
+            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon2.png" alt="img" class="test-image">
             <p>
-                This will be the future home of my blog, which is being rendered isometrically on the server and the browser. The content will render whether Javascript is turned on or off, and will remain SEO-accessible.
+                I'm past due to re-enter the workforce. As much as I've enjoyed this sabbatical, I'm on the hunt for a new position that puts my new skills to good use.
             </p>
             <p>
-                Testing react-markdown <i>now</i>.
+                The actual job search and application process only takes up so much of my time. I'm left to fill the rest of it with projects of my choosing, and it occurs to me that the best projects to choose right now are those that facilitate my search while allowing me to keep my skills up to date.
             </p>
             <p>
-                Need to see if the paragraphs will render as intended.
+                More than a portfolio site, more than an online parking spot for my resumé, this site is one such project.
+            </p>
+            <h5 class="blog-subtitle center-align">
+                Why #1: Because resumés are limited.
+            </h5>
+            <p>
+                A record of past jobs plus an inventory of skills picked up along the way. This information is necessary for sure, but it does little to communicate an individual's level of mastery to a potential employer.
             </p>
             <p>
-                As well as text <b>formatting</b>.
-            </p>
-            <blockquote>
-                <i>Testing out the blockquote</i>
-            </blockquote>
-            <p>
-                And the <a href="https://www.chizabarber.com">links</a> also.
+                Skills have to be demonstrated. Pre-interview tests are one way to demonstrate ability, but a lot of time might be saved for both job-seeker and employer if the initial impression relied on more than just the seeker's resumé.
             </p>
             <p>
-                The data for this blog is being requested from <b>api-server</b> at <a href="https://www.chizabarber.dev">ChizaBarber.dev</a> as an HTML string. It is then converted to a React component on the <b>ssr-server</b> side using <a href="https://github.com/rexxars/react-markdown">react-markdown</a> by rexxars.
-            </p>`
+                My eventual goal with <a href="https://www.chizabarber.com">ChizaBarber.com</a> (along with its sister site <a href="https://www.chizabarber.dev">ChizaBarber.dev</a>) is to demonstrate the following to potential employers:
+            </p>
+            <blockquote><i>My ability to organize information and present it in an easily understood way</i></blockquote>
+            <blockquote><i>My ability to solve problems and address challenges with programming</i></blockquote>
+            <blockquote><i>My pride for being a self-starter who consistently goes above and beyond expectations</i></blockquote>
+            <p>
+                As of writing this blog post, my sites are not quite there yet, but they'll get there! Stay tuned. :)
+            </p>
+            <h5 class="blog-subtitle center-align">
+                Why #2: Because coding bootcamp is over.
+            </h5>
+            <p>
+                My time in the <a href="https://www.digitalcrafts.com/full-stack-flex.html">DigitalCrafts Full-Stack Flex Program</a> was a turning point in my life, and in an odd way I wish I never had to leave it. But, graduation has come and gone. Here on out, it's on me to keep this new skillset polished.
+            </p>
+            <p>
+                To that end, Udemy has been my resource of preference. A particular shout-out to Stephen Grider's courses for helping me wrap my brain around the React &amp; Redux ecosystem.
+            </p>
+            <p>
+                Currently the <code>/code</code> route of ChizaBarber.dev leads to my professional GitHub profile. In the future, I intend to use the route for my coding journal. There I'll post my code snippets, questions, articles, and basically create my own personal Stack Overflow.
+            </p>
+            <p>
+                (As an added bonus, visitors to my site will see that I haven't sat around getting rusty after bootcamp. Yay productivity!)
+            </p>
+            <h5 class="blog-subtitle center-align">
+                Why #3: Because you don't know who I am.
+            </h5>
+            <p>
+                I first encountered the concept of culture fit when I worked in staffing &amp; recruiting. It was a bit of an eye-opener for me that our clients may pass over a technically perfect candidate because they were a poor culture fit.
+            </p>
+            <p>
+                The disappointment of such a mismatch is often compounded by the fact that it tends to happen late in the interview process. I figure if I let a bit of my personality leak out in these blog posts, it will mitigate the risk of wasted time and resources on both sides.
+            </p>
+            <p>
+                If you are reading this, whether you decide to <a href="mailto:admin@chizabarber.com">reach out</a> to me or not, I appreciate you spending your valuable time on getting to know me!
+            </p>
+            <p>More ramblings to come.</p>
+            `
         }
     ]
 }
