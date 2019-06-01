@@ -70,7 +70,7 @@ const blog = {
                 The actual job search and application process only takes up so much of my time. I'm left to fill the rest of it with projects of my choosing, and it occurs to me that the best projects to choose right now are those that facilitate my search while allowing me to keep my skills up to date.
             </p>
             <p>
-                More than a portfolio site, more than an online parking spot for my resumé, this site is one such project.
+                More than just a portfolio site, more than an online parking spot for my resumé, ChizaBarber.com is one such project.
             </p>
             <h5 class="blog-subtitle center-align">
                 Why #1: Because resumés are limited.
