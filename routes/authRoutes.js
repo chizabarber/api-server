@@ -19,14 +19,14 @@ module.exports = (app) => {
         '/auth/google/callback',
         passport.authenticate('google'),
         (req, res) => {
-            res.redirect('/')
+            res.redirect('/dashboard')
         }
     )
     app.get(
         '/api/auth/google/callback',
         passport.authenticate('google'),
         (req, res) => {
-            res.redirect('/')
+            res.redirect('/dashboard')
         }
     )
     app.get(

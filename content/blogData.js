@@ -7,7 +7,7 @@ const blog = {
             img: 'https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png',
             title: 'An Introduction',
             snippet: 'To get something out of the way, yes — I am aware that between...',
-            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png" alt="img" class="test-image">
+            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon.png" alt="img" class="blog-image">
             <p>
                 To get something out of the way, yes — I am aware that between <a href="https://www.chizabarber.com">ChizaBarber.com</a> and <a href="https://www.chizabarber.dev">ChizaBarber.dev</a>, visitors to my site(s) may be confused about what it is that I actually <em>do</em>, and what kind of position I'm trying to get into. 
             </p>
@@ -62,7 +62,7 @@ const blog = {
             img: 'https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon2.png',
             title: 'The Whys of this Site',
             snippet: 'I\'m past due to re-enter the workforce. As much as I\'ve enjoyed this...',
-            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon2.png" alt="img" class="test-image">
+            text: `<img src="https://raw.githubusercontent.com/chizabarber/ssr-server/master/src/images/Icon2.png" alt="img" class="blog-image">
             <p>
                 I'm past due to re-enter the workforce. As much as I've enjoyed this sabbatical, I'm on the hunt for a new position that puts my new skills to good use.
             </p>

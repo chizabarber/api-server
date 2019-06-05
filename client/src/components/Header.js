@@ -54,7 +54,7 @@ const Header = ({ auth }) => {
                     <ul className='right hide-on-med-and-down'>
                         <li>{authButton}</li>
                         <li>
-                            <a href='https://github.com/chizabarber' className='black-text'>
+                            <a href='/code' className='black-text'>
                                 Code
                             </a>
                         </li>
