@@ -9,11 +9,11 @@ module.exports = (app) => {
         '/api/submit_code',
         async (req, res) => {
             const { icon, title, date, content } = req.body
-            const code = new CodePost({
+            const codePost = new CodePost({
                 icon, title, date, content
             })
             try {
-                await code.save()
+                await codePost.save()
             } catch (err) {
                 res.status(422).send(err)
             }
@@ -23,11 +23,11 @@ module.exports = (app) => {
         '/submit_code',
         async (req, res) => {
             const { icon, title, date, content } = req.body
-            const code = new CodePost({
+            const codePost = new CodePost({
                 icon, title, date, content
             })
             try {
-                await code.save()
+                await codePost.save()
             } catch (err) {
                 res.status(422).send(err)
             }

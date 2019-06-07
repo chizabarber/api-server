@@ -1,9 +1,8 @@
 // ------------------------------------------------------
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 // ------------------------------------------------------
-import keys from '../config/keys'
-import requireAuth from './hocs/requireAuth'
+import keys from '../../config/keys'
+import requireAuth from '../hocs/requireAuth'
 import AdminDash from './AdminDash'
 import UserDash from './UserDash'
 // ------------------------------------------------------
@@ -24,11 +23,5 @@ class Dashboard extends Component {
 }
 
 // ------------------------------------------------------
-function mapStateToProps ({ auth }) {
-    return { auth }
-}
-// ------------------------------------------------------
-export default connect(
-    mapStateToProps
-)(requireAuth(Dashboard))
+export default requireAuth(Dashboard)
 // -----------------------------------------------------

@@ -3,7 +3,7 @@ import axios from 'axios'
 // -------------------------------------------------
 import {
     FETCH_USER,
-    SUBMIT_CODE_POST,
+    SUBMIT_CODE_POST, 
     FETCH_CODE_POSTS
 } from './types'
 // -------------------------------------------------

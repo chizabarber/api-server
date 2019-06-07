@@ -3,7 +3,6 @@ import React from 'react'
 // ------------------------------------------------------
 import architecture from '../images/architecture.png'
 import Button from './Button'
-import Footer from './Footer'
 // ------------------------------------------------------
 
 const Home = () => {
@@ -79,10 +78,9 @@ const Home = () => {
                     two sites to work in tandem, one rendered 
                     server-side, and the other rendered client-side; 
                     that way, I'm forced to work with both rendering 
-                    models on this project! Only way to learn. :)
+                    models on this project! Only way to learn.
                 </p>
             </div>
-            <Footer />
         </div>
     )
 }

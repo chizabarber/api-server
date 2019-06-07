@@ -1,30 +1,84 @@
 // ------------------------------------------------------
+const mongoose = require('mongoose')
 const { Path } = require('path-parser')
 // ------------------------------------------------------
-const blog = require('../content/blogData')
+const BlogPost = mongoose.model('blogPost')
 // ------------------------------------------------------
 
 module.exports = (app) => {
-    app.get('/blog', (req, res) => {
-        res.send(blog)
-    })
-    app.get('/api/blog', (req, res) => {
-        res.send(blog) 
-    })
-    app.get('/blog/:id', (req, res) => {
-        const path = new Path('/blog/:id')
-        const match = path.test(req.originalUrl)
-        if (match) {
-            res.send(blog.posts[match.id - 1])
+    app.get(
+        '/blog_posts', 
+        async (req, res) => {
+            const blogPosts = await BlogPost.find({})
+            res.send(blogPosts)
         }
-    })
-    app.get('/api/blog/:id', (req, res) => {
-        const path = new Path('/api/blog/:id')
-        const match = path.test(req.originalUrl)
-        if (match) {
-            res.send(blog.posts[match.id - 1])
+    )
+    app.get(
+        '/api/blog_posts', 
+        async (req, res) => {
+            const blogPosts = await BlogPost.find({})
+            res.send(blogPosts)
         }
-    })
+    )
+    app.get(
+        '/blog_posts/:id',
+        async (req, res) => {
+            const path = new Path('/blog_posts/:id')
+            const match = path.test(req.originalUrl)
+            if (match) {
+                const blogPost = await BlogPost.findOne({
+                    _id: match.id
+                })
+                console.log(match)
+                res.send(blogPost)
+            }
+        }
+    )
+    app.get(
+        '/api/blog_posts/:id',
+        async (req, res) => {
+            const path = new Path('/api/blog_posts/:id')
+            const match = path.test(req.originalUrl)
+            if (match) {
+                const blogPost = await BlogPost.findOne({
+                    _id: match.id
+                })
+                res.send(blogPost)
+            }
+        }
+    )
+    app.post(
+        '/submit_blog',
+        async (req, res) => {
+            const {
+                img, title, snippet, content, date
+            } = req.body
+            const blogPost = new BlogPost({
+                img, title, snippet, content, date
+            })
+            try {
+                await blogPost.save()
+            } catch (err) {
+                res.status(422).send(err)
+            }
+        }
+    )
+    app.post(
+        '/api/submit_blog',
+        async (req, res) => {
+            const {
+                img, title, snippet, content, date
+            } = req.body
+            const blogPost = new BlogPost({
+                img, title, snippet, content, date
+            })
+            try {
+                await blogPost.save()
+            } catch (err) {
+                res.status(422).send(err)
+            }
+        }
+    )
 }
 
 // ------------------------------------------------------

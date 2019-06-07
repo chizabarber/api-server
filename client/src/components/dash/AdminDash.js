@@ -5,11 +5,11 @@ import { Field, reduxForm } from 'redux-form'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
 // ------------------------------------------------------
-import { submitCodePost } from '../actions'
+import { submitCodePost } from '../../actions'
 // ------------------------------------------------------
 
 class AdminDash extends Component {
-    renderTitleInput = ({ input, label }) => {
+    renderInput = ({ input, label }) => {
         return (
             <div className='input-field'>
                 <input 
@@ -21,7 +21,7 @@ class AdminDash extends Component {
             </div>
         )
     }
-    renderContentInput = ({ input, label }) => {
+    renderTextarea = ({ input, label }) => {
         return (
             <div className='input-field'>
                 <textarea 
@@ -61,17 +61,17 @@ class AdminDash extends Component {
                         <Field
                             name='title'
                             label='Enter title here'
-                            component={this.renderTitleInput}
+                            component={this.renderInput}
                         />
                         <Field
                             name='icon'
                             label='MaterializeCSS icon here'
-                            component={this.renderTitleInput}
+                            component={this.renderInput}
                         />
                         <Field
                             name='content'
                             label='Enter content here'
-                            component={this.renderContentInput}
+                            component={this.renderTextarea}
                         />
                         <button
                             type='submit'

@@ -1,7 +1,14 @@
 // ------------------------------------------------------
+import prod from './prod'
+import dev from './dev'
+// ------------------------------------------------------
 
-const keys = {
-    adminID: '104115147170088126221'
+let keys;
+
+if (process.env.NODE_ENV === 'production') {
+    keys = prod
+} else {
+    keys = dev
 }
 
 // ------------------------------------------------------

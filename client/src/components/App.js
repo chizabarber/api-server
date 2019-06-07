@@ -7,9 +7,10 @@ import '../styles/App.css'
 import { fetchUser } from '../actions'
 import Header from './Header'
 import Home from './Home'
-import Dashboard from './Dashboard'
-import CodeList from './codelist/CodeList'
+import Dashboard from './dash/Dashboard'
+import CodeList from './code/CodeList'
 import Projects from './Projects'
+import Footer from './Footer';
 // ------------------------------------------------------
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
                     <Route exact path='/dashboard' component={Dashboard} />
                     <Route exact path='/projects' component={Projects} />
                     <Route exact path='/code' component={CodeList} />
+                    <Footer />
                 </div>
             </BrowserRouter>
         )

@@ -12,7 +12,7 @@ class CodeList extends Component {
         const collapsible = document.querySelector('.collapsible')
         M.Collapsible.init(collapsible, {})
     }
-    renderList () {                                     // Todo: map code posts to collapsibles
+    renderList () {                                     // Done: map code posts to collapsibles
         const code = this.props.code
         return code.reverse().map(({ _id, icon, title, date, content }) => {
             return (
