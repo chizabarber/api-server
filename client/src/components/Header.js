@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import M from 'materialize-css'
 // ------------------------------------------------------
+import BrandLogo from './BrandLogo'
+// ------------------------------------------------------
 
 const Header = ({ auth }) => {
     console.log('My auth status is', auth)
@@ -30,17 +32,7 @@ const Header = ({ auth }) => {
                 }}
             >
                 <div className='nav-wrapper'>
-                    <Link 
-                        to='/'
-                        className='brand-logo'
-                        style={{
-                            color: '#367da2',
-                            marginLeft: '1%',
-                            fontSize: '1.75rem'
-                        }}
-                    >
-                        C B | dev
-                    </Link>
+                    <BrandLogo />
                     {/* eslint-disable-next-line */}
                     <a 
                         href='#' 
@@ -71,7 +63,12 @@ const Header = ({ auth }) => {
                                     fontSize: '1.5rem'
                                 }}
                             >
-                                | com
+                                <span style={{ color: '#000' }}>
+                                |
+                                </span>
+                                <span style={{ marginLeft: '10px' }}>
+                                    com
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -95,7 +92,12 @@ const Header = ({ auth }) => {
                                     fontSize: '1.5rem'
                                 }}
                             >
-                                | com
+                                <span style={{ color: '#000' }}>
+                                |
+                                </span>
+                                <span style={{ marginLeft: '10px' }}>
+                                    com
+                                </span>
                             </a>
                         </li>
                     </ul>
