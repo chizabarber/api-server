@@ -44,7 +44,18 @@ class CodeList extends Component {
                         color: '#367da2'
                     }}
                 >
-                    | dev · CODE
+                    <span style={{ color: '#000' }}>
+                        |
+                    </span>
+                    <span style={{ marginLeft: '10px' }}>
+                        dev
+                    </span>
+                    <span style={{ color: '#000', marginLeft: '10px' }}>
+                        ·
+                    </span>
+                    <span style={{ marginLeft: '10px' }}>
+                        CODE
+                    </span>
                 </h3>
                 <hr className='h-rule' />
                 <ul className='collapsible popout'>

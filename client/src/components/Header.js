@@ -93,7 +93,7 @@ const Header = ({ auth }) => {
                                 }}
                             >
                                 <span style={{ color: '#000' }}>
-                                |
+                                    |
                                 </span>
                                 <span style={{ marginLeft: '10px' }}>
                                     com
