@@ -1,6 +1,7 @@
 // ------------------------------------------------------
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import ReactMarkdown from 'react-markdown/with-html'
 import M from 'materialize-css'
 // ------------------------------------------------------
 import { fetchCodePosts } from '../../actions'
@@ -23,7 +24,10 @@ class CodeList extends Component {
                         <div className='date-right-align'>{date}</div>
                     </div>
                     <div className='collapsible-body left-align'>
-                        {content}
+                        <ReactMarkdown 
+                            source={content}
+                            escapeHtml={false}
+                        />
                     </div>
                 </li>
             )
