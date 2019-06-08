@@ -8,7 +8,6 @@ import BrandLogo from './BrandLogo'
 // ------------------------------------------------------
 
 const Header = ({ auth }) => {
-    console.log('My auth status is', auth)
     useEffect(() => {
         const sidenav = document.querySelector('.sidenav')
         M.Sidenav.init(sidenav, {})

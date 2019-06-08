@@ -29,7 +29,6 @@ module.exports = (app) => {
                 const blogPost = await BlogPost.findOne({
                     _id: match.id
                 })
-                console.log(match)
                 res.send(blogPost)
             }
         }
