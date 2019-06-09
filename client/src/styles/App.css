@@ -93,4 +93,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
     right: 1rem
 }
 
-/* List styles ----------------------------------- */
+/* Card styles ----------------------------------- */
+
+.card:hover {
+    transition: transform 0.1s;
+    transform: scale(1.025)
+}
+
+/* Card styles ----------------------------------- */

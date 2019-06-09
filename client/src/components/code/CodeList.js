@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown/with-html'
 import M from 'materialize-css'
 // ------------------------------------------------------
 import { fetchCodePosts } from '../../actions'
+import PageTitle from '../PageTitle'
 // ------------------------------------------------------
 
 class CodeList extends Component {
@@ -39,24 +40,12 @@ class CodeList extends Component {
                 className='center-align container'
                 style={{ marginTop: '5%' }}
             >
-                <h3
-                    style={{
-                        color: '#367da2'
-                    }}
-                >
-                    <span style={{ color: '#000' }}>
-                        |
-                    </span>
-                    <span style={{ marginLeft: '10px' }}>
-                        dev
-                    </span>
-                    <span style={{ color: '#000', marginLeft: '10px' }}>
-                        ·
-                    </span>
-                    <span style={{ marginLeft: '10px' }}>
-                        CODE
-                    </span>
-                </h3>
+                <PageTitle 
+                    blk1='|'
+                    blu1='dev'
+                    blk2='·'
+                    blu2='CODE'
+                />
                 <hr className='h-rule' />
                 <ul className='collapsible popout'>
                     {this.renderList()}
