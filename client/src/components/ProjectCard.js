@@ -16,8 +16,7 @@ const ProjectCard = ({ img, alt, title, blurb, about }) => {
                         src={img} alt={alt}
                         className='activator'
                         style={{ 
-                            maxWidth: '15vw', 
-                            minWidth: '15vw',
+                            width: '175px',
                             display: 'inline-block'
                         }}
                     />
