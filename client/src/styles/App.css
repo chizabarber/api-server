@@ -89,6 +89,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
     font-size: 1.07em 
 }
 .date-right-align {
+    display: inline;
     position: absolute;
     right: 1rem
 }
