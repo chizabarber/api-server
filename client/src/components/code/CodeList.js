@@ -11,6 +11,7 @@ import PageTitle from '../PageTitle'
 class CodeList extends Component {
     componentDidMount () {
         this.props.fetchCodePosts()
+        document.title = 'C B | dev - CODE'
         const collapsible = document.querySelector('.collapsible')
         M.Collapsible.init(collapsible, {})
     }

@@ -1,5 +1,5 @@
 // ------------------------------------------------------
-import React from 'react'
+import React, { useEffect } from 'react'
 // ------------------------------------------------------
 import PageTitle from './PageTitle'
 import ProjectCard from './ProjectCard'
@@ -8,13 +8,16 @@ import SideGig from '../images/SideGig.png'
 // ------------------------------------------------------
 
 const Projects = () => {
+    useEffect(() => {
+        document.title = 'C B | dev - PROJECTS'
+    })
     const jobSeekAbout = `
     JobSeek aggregates relevant jobs and tracks applications. 
     
     Come back soon to see my progress on this app!
     `
     const sideGigAbout = `
-    SideGig tracks side income with metrics and visualization.
+    SideGig tracks side income with metrics and visualizations.
     
     Come back soon to see my progress on this app!
     `
@@ -32,7 +35,7 @@ const Projects = () => {
                     img={SideGig}
                     alt='SideGig icon'
                     title='SideGig'
-                    blurb='SideGig tracks side income with metrics and visualization.'
+                    blurb='SideGig tracks side income with metrics and visualizations.'
                     about={sideGigAbout}
                 />
             </React.Fragment>
