@@ -153,5 +153,14 @@ textarea.materialize-textarea:focus:not([readonly]) {
     margin: 16px;
 }
 
-/* DnD styles -------------------------------------- */
+/* codePost styles ------------------------------------ */
+
+.code-image {
+    width: 40vw;
+    display: block;
+    margin: 30px auto 30px auto
+}
+
+
+/* codePost styles ------------------------------------ */
 
