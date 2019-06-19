@@ -3,8 +3,8 @@ import axios from 'axios'
 // -------------------------------------------------
 import {
     FETCH_USER,
-    SUBMIT_CODE_POST, 
-    FETCH_CODE_POSTS
+    SUBMIT_CODE_POST, FETCH_CODE_POSTS,
+    FETCH_GITHUB_JOBS
 } from './types'
 // -------------------------------------------------
 
@@ -34,6 +34,18 @@ export const submitCodePost = (formValues) => async (dispatch) => {
     })
     dispatch({
         type: SUBMIT_CODE_POST,                     // Done: create codeReducer to catch this action creator
+        payload: res.data
+    })
+}
+
+export const fetchGitHubJobs = () => async (dispatch) => {
+    const res = await axios.get(
+        `${'https://cors-anywhere.herokuapp.com/'}https://jobs.github.com/positions.json?location=texas&page=1`,
+        { crossDomain: true }
+    )
+    console.log(res)
+    dispatch({
+        type: FETCH_GITHUB_JOBS,
         payload: res.data
     })
 }

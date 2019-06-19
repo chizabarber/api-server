@@ -1,11 +1,14 @@
 // ------------------------------------------------------
-import React from 'react'
+import React, { useEffect } from 'react'
 // ------------------------------------------------------
 import architecture from '../images/architecture.png'
 import Button from './Button'
 // ------------------------------------------------------
 
 const Home = () => {
+    useEffect(() => {
+        document.title = 'Chiza Barber | dev'
+    })
     const renderLinks = () => {
         return (
             <div>

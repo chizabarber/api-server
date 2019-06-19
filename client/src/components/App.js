@@ -10,7 +10,9 @@ import Home from './Home'
 import Dashboard from './dash/Dashboard'
 import CodeList from './code/CodeList'
 import Projects from './Projects'
-import Footer from './Footer';
+import JobSeek from './jobseek/JobSeek'
+import SideGig from './sidegig/SideGig'
+import Footer from './Footer'
 // ------------------------------------------------------
 
 class App extends Component {
@@ -26,6 +28,8 @@ class App extends Component {
                     <Route exact path='/dashboard' component={Dashboard} />
                     <Route exact path='/projects' component={Projects} />
                     <Route exact path='/code' component={CodeList} />
+                    <Route exact path='/jobseek' component={JobSeek} />
+                    <Route exact path='/sidegig' component={SideGig} />
                     <Footer />
                 </div>
             </BrowserRouter>
