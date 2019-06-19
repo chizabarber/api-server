@@ -156,7 +156,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 /* codePost styles ------------------------------------ */
 
 .code-image {
-    width: 40vw;
+    width: 50vw;
     display: block;
     margin: 30px auto 30px auto
 }
